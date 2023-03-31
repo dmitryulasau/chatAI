@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Neucha&display=swap");
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.sidemenu {
+  width: 23.1rem;
+  color: #ffffff;
+  background-color: #0f1c35;
+  box-shadow: 0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+}
+
+.chatfield {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ccd3e0;
+
+  position: relative;
+}
+
+/* NEW CHAT BUTTON */
+.new-chat-button {
+  margin: 2.8rem 2.65rem;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+
+  max-width: 17.8rem;
+  max-height: 3.2rem;
+  padding: 0.8rem 5.8rem;
+  border: 0.1rem solid #ffffff;
+  border-radius: 0.6rem;
+
+  transition: 0.3s;
+}
+
+.new-chat-button:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* CHAT INPUT FIELD */
+.chat-input-field {
+  width: calc(100% - 23.1rem);
+  display: flex;
+  gap: 2.5rem;
+
+  align-items: center;
+
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+  padding-bottom: 1.7rem;
+  padding-top: 1.7rem;
+
+  background-color: #ccd3e0;
+}
+
+.chat-input-field__textarea {
+  width: 100%;
+
+  border-radius: 1.28rem;
+  border: none;
+  outline: none;
+  resize: none;
+
+  padding: 1.515rem 0 1.78515rem 1.6315rem;
+
+  font-weight: 500;
+  font-size: 1.4381rem;
+  line-height: 1.9rem;
+  color: #9ba1ae;
+}
+
+form {
+  width: 100%;
+}
+
+.sumbit {
+  transition: all 0.3s ease-in-out;
+}
+.sumbit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/* HEADER */
+.header {
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+
+  padding: 2.796rem 3.8rem 2.207rem 3.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-text {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 2.017rem;
+  line-height: 2.3rem;
+  color: #0f1c35;
+}
+
+.header-small-text {
+  font-weight: 400;
+  font-size: 1.11852rem;
+  line-height: 1.1rem;
+  color: #9ba1ae;
+}
+
+/* CHAT */
+
+.chatfield {
+  height: calc(100% - 85.96px);
+  overflow-y: auto;
+}
+
+.fixed-input-field {
+  position: fixed;
+  bottom: 0;
+}
+
+.chat-log {
+  margin-top: 16.728rem;
+
+  text-align: left;
+}
+.chat-message.chatopenai {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.chat-message {
+  background-color: #ffffff;
+}
+
+.chat-message-center {
+  display: flex;
+  flex-direction: column;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1.746rem;
+}
+
+.message-box {
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  gap: 3rem;
+}
+.message {
+  word-wrap: break-word;
+  font-weight: 500;
+  font-size: 1.27831rem;
+  line-height: 1.9rem;
+  color: #555b67;
+}
+
+.timestamp {
+  padding-left: 1.2rem;
+  font-weight: 400;
+  font-size: 0.95873rem;
+  line-height: 1.1rem;
+  color: #9ba1ae;
+}
+
+.copy-icon {
+  display: none;
+  transition: all 0.2s ease-in-out;
+}
+.copy-icon:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.copy-icon.chatopenai {
+  display: block;
+}
+
+.copy-img {
+  filter: invert(30%) sepia(20%) saturate(274%) hue-rotate(169deg)
+    brightness(88%) contrast(86%);
+}
+
+.chat-message.typing .message {
+  animation: typing 1s steps(15, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* OLD */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
