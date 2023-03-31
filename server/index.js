@@ -45,6 +45,12 @@ app.get("/models", async (req, res) => {
   });
 });
 
+app.get("/", async (req, res) => {
+  res.status(200).send({
+    message: "Server is LIVE!",
+  });
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Server running at http://localhost:${process.env.PORT}`);
 });
