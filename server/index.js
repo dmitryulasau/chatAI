@@ -8,7 +8,7 @@ const userRoutes = require("./routes/users");
 const authRoutes = require("./routes/auth");
 //db connection
 connection();
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.OPENAI_API_KEY;
 
 const configuration = new Configuration({
   organization: "org-8iJbSpwMgSqMRiPe0nOEQ90f",
