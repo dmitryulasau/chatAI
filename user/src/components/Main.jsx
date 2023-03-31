@@ -22,7 +22,7 @@ export default function Main() {
     await setChatLog(chatLogNew);
 
     const messages = chatLogNew.map((message) => message.message).join("\n");
-    const response = await fetch("http://localhost:8800/", {
+    const response = await fetch("https://duopenai.onrender.com", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
