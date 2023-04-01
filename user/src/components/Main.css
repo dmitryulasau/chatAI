@@ -266,4 +266,13 @@ form {
   .chat-log {
     margin-top: 9.728rem;
   }
+
+  .logout-button {
+    position: absolute;
+    top: 9%;
+    right: 0;
+    width: 5%;
+    z-index: 2;
+    border: 1px solid #0f1c35;
+  }
 }
