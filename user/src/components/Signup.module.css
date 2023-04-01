@@ -79,7 +79,7 @@
 }
 
 .white_btn,
-.green_btn {
+.blue_btn {
   border: none;
   outline: none;
   padding: 12px 0;
@@ -91,8 +91,43 @@
   cursor: pointer;
 }
 
-.green_btn {
+.blue_btn {
   background-color: #0f1c35;
   color: white;
   margin: 10px;
+}
+
+@media only screen and (max-width: 428px) and (max-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .signup_form_container {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+    flex-direction: column;
+  }
+  .left {
+    padding: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    height: 200px;
+  }
+  .right {
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0;
+    height: 300px;
+    padding: 2rem;
+  }
+  .left h1 {
+    font-size: 25px;
+  }
+  .form_container h1 {
+    font-size: 30px;
+  }
+  .input {
+    width: 100%;
+  }
+
+  .blue_btn {
+    width: 100%;
+  }
 }

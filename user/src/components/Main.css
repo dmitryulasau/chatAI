@@ -238,46 +238,32 @@ form {
   animation: typing 1s steps(15, end);
 }
 
-@keyframes typing {
-  from {
-    width: 0;
+@media only screen and (max-width: 768px) {
+  .App {
+    flex-direction: column;
   }
-  to {
+
+  .new-chat-button {
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  .sidemenu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .chat-input-field {
+    position: fixed;
+    bottom: 0;
     width: 100%;
   }
-}
 
-/* OLD */
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .chat-input-field__textarea {
+    border-radius: 0;
   }
-}
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .chat-log {
+    margin-top: 9.728rem;
   }
 }
