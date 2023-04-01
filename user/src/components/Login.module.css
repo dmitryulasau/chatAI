@@ -97,7 +97,47 @@
   margin: 10px;
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 740px) {
+  .login_form_container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .left,
+  .right {
+    border-radius: 0;
+    width: 100%;
+    height: auto;
+  }
+  .left {
+    border-bottom-left-radius: 0;
+  }
+  .right {
+    margin-top: 1rem;
+    padding-top: 3rem;
+    font-size: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .form_container {
+    margin: 20px;
+  }
+  .input {
+    width: 90%;
+  }
+
+  .blue_btn {
+    width: 90%;
+    margin: 10px 20px;
+  }
+
+  .white_btn {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
   .login_form_container {
     flex-direction: column;
     height: auto;
